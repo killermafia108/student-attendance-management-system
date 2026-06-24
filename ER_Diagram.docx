@@ -1,0 +1,29 @@
++------------------+
+|      ADMIN       |
++------------------+
+| Admin_ID (PK)    |
+| Username         |
+| Password         |
++------------------+
+          |
+          | Manages
+          |
++----------------------+
+|     ATTENDANCE       |
++----------------------+
+| Attendance_ID (PK)   |
+| Student_ID (FK)      |
+| Attendance_Date      |
+| Status               |
++----------------------+
+          |
+          | Has
+          |
++------------------+
+|     STUDENT      |
++------------------+
+| Student_ID (PK)  |
+| Student_Name     |
+| Course           |
+| Semester         |
++------------------+
