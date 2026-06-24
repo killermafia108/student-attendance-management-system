@@ -3,15 +3,19 @@ function markPresent(){
     let name = document.getElementById("studentName").value;
 
     if(name===""){
-        alert("Enter Student Name");
+        alert("Please Enter Student Name");
         return;
     }
 
-    let li = document.createElement("li");
+    let table = document.getElementById("attendanceTable");
 
-    li.innerText = name + " - Present";
+    let row = table.insertRow();
 
-    document.getElementById("attendanceList").appendChild(li);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+
+    cell1.innerHTML = name;
+    cell2.innerHTML = "Present";
 
     document.getElementById("studentName").value="";
 }

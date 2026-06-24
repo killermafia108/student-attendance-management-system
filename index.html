@@ -6,8 +6,13 @@
 </head>
 <body>
 
-<div class="container">
+<header>
     <h1>Student Attendance Management System</h1>
+</header>
+
+<div class="container">
+
+    <h2>Add Student Attendance</h2>
 
     <input type="text" id="studentName" placeholder="Enter Student Name">
 
@@ -15,8 +20,22 @@
 
     <h2>Attendance Records</h2>
 
-    <ul id="attendanceList"></ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceTable">
+        </tbody>
+    </table>
+
 </div>
+
+<footer>
+    <p>Developed By Chandan Verma</p>
+</footer>
 
 <script src="script.js"></script>
 
